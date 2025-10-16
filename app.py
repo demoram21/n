@@ -6,7 +6,10 @@ import numpy as np
 import io
 import os
 import requests
+from dotenv import load_dotenv
 
+# Load environment variables from .env file
+load_dotenv()
 
 app = Flask(__name__)
 CORS(app, origins=["https://frontend-sigma-seven-58.vercel.app"])
