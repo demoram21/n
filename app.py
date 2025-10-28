@@ -12,7 +12,12 @@ from dotenv import load_dotenv
 load_dotenv()
 
 app = Flask(__name__)
-CORS(app, origins=["https://frontend-sigma-seven-58.vercel.app"])
+# Configure CORS for multiple frontend deployments
+CORS(app, origins=[
+    "https://frontend-sigma-seven-58.vercel.app",
+    "http://localhost:3000",
+    "http://localhost:5000"
+])
 
 
 
