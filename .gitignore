@@ -145,13 +145,14 @@ cython_debug/
 *~
 .DS_Store
 
-# Machine Learning Models (optional - uncomment if you don't want to track the model)
-# *.h5
-# *.hdf5
-# *.keras
-# *.pkl
-# *.pickle
-# *.joblib
+# Machine Learning Models - downloaded at runtime
+*.h5
+*.hdf5
+*.keras
+*.pkl
+*.pickle
+*.joblib
+skin_disease_model.h5
 
 # Logs
 *.log
